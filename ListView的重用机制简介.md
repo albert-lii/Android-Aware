@@ -4,8 +4,8 @@
 ## 一、RecycleBin
 `RecycleBin` 是 `ListView`的重用机制的核心，它是 `ListView` 的一个内部类。
 其中，有两个重要的变量我们要记住：  
-1. `mActiveViews`：缓存屏幕上可见的 itemView
-2. `mScrapViews`：缓存废弃的 itemView
+- `mActiveViews`：缓存屏幕上可见的 itemView
+- `mScrapViews`：缓存废弃的 itemView
 
 **大致原理是：**   
 1. `ListView` 的 item 滑出屏幕后，会从 ListView 上移除放入 `RecycleBin` 中
